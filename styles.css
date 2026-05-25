@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f6; /* Un gris un pelín más moderno y limpio */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+/* --- LA BARRA DE ARRIBA --- */
+.main-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky; /* Truco extra: Se queda fija arriba si haces scroll down */
+    top: 0;
+    z-index: 100;
+}
+
+.main-header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px; /* Letras un poco más juntas para estilo deportivo */
+    text-transform: uppercase; /* Todo en mayúsculas para que imponga */
+}
+
+/* --- CONTENEDOR CENTRAL DE LAS NAVES --- */
+.feed-container {
+    max-width: 620px; /* Un pelín más ancho para que se aprecien los detalles */
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* --- CADA POST (LA CAJA) --- */
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Una sombrita muy sutil */
+}
+
+/* --- CABECERA DE LA CARTA (Nombre del coche y fecha) --- */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: #ffffff;
+}
+
+.post-header h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.post-date {
+    color: #8e8e93;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* --- LA FOTO --- */
+.post-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-height: 450px; /* Para que ninguna foto vertical se coma toda la pantalla */
+    object-fit: cover; /* Si la foto es rara, se corta de forma inteligente sin deformarse */
+}
+
+/* --- PIE DE FOTO CON LOS HASHTAGS --- */
+.post-footer {
+    padding: 16px 18px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Un toque de color gris oscuro para los hashtags y que parezca una red social */
+.post-footer p {
+    color: #262626;
+    word-wrap: break-word;
+}
